@@ -1,0 +1,79 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js">
+    </script>
+    <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js">
+    </script>
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+   @*  <link rel="stylesheet" type="text/css" href="C:/Users/helly/OneDrive/Desktop/assignment/Capstrome/pureair_pro website/PureAirPro/wwwroot/css/home.css"> *@
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <div class="header">
+                <div class="hero">
+                    <img src="~/image/bgimg.jpg" alt="Background Image">
+                    <div class="hero-text">
+                        <h1 style="font-size:33px>Welcome to Our E-commerce Store</h1>
+                        <p style="font-size:29px>Discover the best deals on a wide range of products!</p>
+                        <form class=" " asp-controller="Home" asp-action="CallAPi" data-ajax="true" data-ajax-method="GET" data-ajax-begin="onBeginapi" data-ajax-success="onSuccessapi" data-ajax-failure="onFailureapi">
+                            <button type="submit" style="display:flex; margin-left:200px">Predict AQI</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="product">
+                    <div class="product-image">
+                        <img src="~/image/airnew1.jpg" alt="Product Image">
+                    </div>
+                    <div class="product-description">
+                        <h2>Product Title</h2>
+                        <p> Breathe easier with PureAir Pro. Our advanced air purifier utilizes cutting-edge technology to eliminate airborne contaminants,ensuring clean and healthy indoor air. Experience freshness in every breath with PureAir Pro.</p>
+                        <p class="price">$49.99</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <div class="customer">
+                        <img src="~/image/cr2.jpeg" alt="Customer 1" class="customer-img">
+                        <p class="customer-name">John Doe</p>
+                    </div>
+                    <p class="review-text">"I've noticed a significant improvement in air quality since using PureAir Pro. It's whisper-quiet and incredibly effective. Highly recommend!"</p>
+                </div>
+                <div class="review">
+                    <div class="customer">
+                        <img src="~/image/cr1.jpeg" alt="Customer 2" class="customer-img">
+                        <p class="customer-name">Jane Smith</p>
+                    </div>
+                    <p class="review-text">"PureAir Pro has made a noticeable difference in my home. My allergies have improved, and I no longer wake up congested. Thank you for this amazing product!"</p>
+                </div>
+                <!-- Add more reviews as needed -->
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+@section Scripts {
+    <script src="~/Jquery/ProductOrder.js"></script>
+}
+@* <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+ *@

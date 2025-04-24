@@ -1,0 +1,34 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.header3 h3 {
+    margin-left: 20px;
+    padding-left: 30px;
+    color: white;
+    margin-top: 10px;
+}
+
+.btnsignup {
+    text-align: center;
+    height: 43px;
+    margin-top: 12px;
+}
+.btnsignup :hover{
+    background-color: #00B2FF !important;
+}

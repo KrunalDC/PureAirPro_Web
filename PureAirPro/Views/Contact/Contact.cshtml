@@ -1,0 +1,119 @@
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<div class="text-left pb-4 pt-16">
+    <!-- <h2 class="form_title">Contact Us</h2> -->
+</div>
+<div class="row">
+    <div class="col-8">
+        <div class="card form_card">
+            <div class="card-body">
+                <h5 class="card-title mb-5">Have a question or concern? Reach out and we’ll connect shortly</h5>
+                <form class="mb-4" method="post" action="/Contact/contactForm" id="ContactForm">
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <input type="text" class="form-control" id="fname" placeholder="First Name*">
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="form-control" id="lname"  placeholder="Last Name*">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <input type="text" class="form-control" id="email" placeholder="Email*">
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="form-control" id="phone" placeholder="Phone Number*">
+                        </div>
+                    </div>
+                    <div class="row pb-4">
+                        <div class="col-12">
+                            <textarea class="contactsub" id="message" name="message" placeholder="How can we help?"></textarea>
+                        </div>
+                    </div>
+                    <div class="form_wrap text-right">
+                        <input type="submit" class="btn btn-primary form_btn" value="Submit">
+                    </div>
+                </form>
+                <div class="row">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184100.44374240292!2d-79.2384842974661!3d43.86475222553245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d51b902fedb973%3A0xdd6091694035e8a1!2sDurham%20College!5e0!3m2!1sen!2sca!4v1712120441509!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card social_card">
+            <div class="card-body">
+                <h5 class="card-title mb-3">Stay Connected</h5>
+                <div class="mb-3">
+                    <a href="#" class="fa fa-facebook mr-3"></a>
+                    <span>Facebook</span>
+                </div>
+                <div class="mb-3">
+                    <a href="#" class="fa fa-instagram"></a>
+                    <span>Instagram</span>
+                </div>
+                <div class="mb-3">
+                    <a href="#" class="fa fa-twitter"></a>
+                    <span>Twitter</span>
+                </div>
+                <div class="mb-3">
+                    <a href="#" class="fa fa-youtube"></a>
+                    <span>YouTube</span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+.contactsub {
+    height: 195px;
+    resize: none;
+    width:100%;
+}
+.form_btn {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 18px;
+    padding: 12px 43px 10px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 15px;
+  margin-left: 25px;
+  margin-right: 10px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.form_card{
+    border-radius: 25px;
+}
+.social_card{
+    border-radius: 25px;
+}
+
+</style>
