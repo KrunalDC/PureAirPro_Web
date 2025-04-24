@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PureAirPro")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2348555edf41ab10a61decc1c685b4a64717699")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0774ce9c9be119c685790a686c4555fc078d5c5a")]
 [assembly: System.Reflection.AssemblyProductAttribute("PureAirPro")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PureAirPro")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
