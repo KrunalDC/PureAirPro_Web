@@ -13,7 +13,6 @@
     <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js">
     </script>
     <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
-   @*  <link rel="stylesheet" type="text/css" href="C:/Users/helly/OneDrive/Desktop/assignment/Capstrome/pureair_pro website/PureAirPro/wwwroot/css/home.css"> *@
 </head>
 <body>
 
@@ -25,9 +24,9 @@
                     <div class="hero-text">
                         <h1 style="font-size:33px>Welcome to Our E-commerce Store</h1>
                         <p style="font-size:29px>Discover the best deals on a wide range of products!</p>
-                        <form class=" " asp-controller="Home" asp-action="CallAPi" data-ajax="true" data-ajax-method="GET" data-ajax-begin="onBeginapi" data-ajax-success="onSuccessapi" data-ajax-failure="onFailureapi">
+                        @* <form class=" " asp-controller="Home" asp-action="CallAPi" data-ajax="true" data-ajax-method="GET" data-ajax-begin="onBeginapi" data-ajax-success="onSuccessapi" data-ajax-failure="onFailureapi">
                             <button type="submit" style="display:flex; margin-left:200px">Predict AQI</button>
-                        </form>
+                        </form> *@
                     </div>
                 </div>
             </div>
@@ -60,20 +59,13 @@
                     </div>
                     <p class="review-text">"PureAir Pro has made a noticeable difference in my home. My allergies have improved, and I no longer wake up congested. Thank you for this amazing product!"</p>
                 </div>
-                <!-- Add more reviews as needed -->
             </div>
         </div>
     </main>
 
-    <script src="script.js"></script>
 </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 @section Scripts {
     <script src="~/Jquery/ProductOrder.js"></script>
 }
-@* <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
- *@

@@ -1,0 +1,6 @@
+﻿.removeBackgroundColor {
+    background-color: transparent !important;
+}
+.addBackgroundColor {
+    background-color: var(--bs-gray-200) !important;
+}

@@ -44,3 +44,18 @@ $("#Quantity").on('keyup', function () {
     var TotalPrice = (price * quantity).toFixed(2);
     $("#TotalPrice").val(TotalPrice);
 }) 
+
+function onBeginContact() {
+    $('#loader').removeClass('hidden');
+}
+
+function onSuccessContact() {
+    $('#loader').addClass('hidden');
+    Swal.fire({
+        title: "Thank you for reaching out!!",
+        text: "Our team will contact you within 24-48 hours. We appreciate your interest in PureAirPro!",
+        icon: "success"
+    }).then(function () {
+        window.location = "/";
+    });
+}

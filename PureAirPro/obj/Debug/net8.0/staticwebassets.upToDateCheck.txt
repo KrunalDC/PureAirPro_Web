@@ -2560,6 +2560,7 @@ wwwroot\assets\plugins\global\plugins.bundle.css.map
 wwwroot\assets\plugins\global\plugins.bundle.js
 wwwroot\assets\plugins\global\plugins.bundle.js.map
 wwwroot\assets\plugins\global\sourcemaps\tiny-slider.css.map
+wwwroot\css\Common.css
 wwwroot\css\home.css
 wwwroot\css\Loader.css
 wwwroot\css\product.css
@@ -2574,6 +2575,7 @@ wwwroot\image\bgimg.jpg
 wwwroot\image\cr1.jpeg
 wwwroot\image\cr2.jpeg
 wwwroot\image\Logo.jpeg
+wwwroot\Jquery\Common.js
 wwwroot\Jquery\ProductOrder.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css

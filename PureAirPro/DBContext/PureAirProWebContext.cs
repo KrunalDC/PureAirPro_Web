@@ -23,7 +23,8 @@ namespace PureAirPro.DBContext
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server= DESKTOP-2UKJO7T; Database=PureAirProWeb;Trusted_Connection=True; TrustServerCertificate=True; Integrated Security=true");
+				var connectionString = Environment.GetEnvironmentVariable("DefaultConnection");
+				optionsBuilder.UseSqlServer(connectionString);
             }
         }
 

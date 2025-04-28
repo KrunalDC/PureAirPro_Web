@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\PureAirPro.3sz07haopn.bundle.scp.css"
     },
     {
+      "Id": "F:\\Krunal Canada\\AI\\CapStone\\PureAirPro\\PureAirPro_Web\\PureAirPro\\wwwroot\\Jquery\\Common.js",
+      "PackagePath": "staticwebassets\\Jquery\\Common.js"
+    },
+    {
       "Id": "F:\\Krunal Canada\\AI\\CapStone\\PureAirPro\\PureAirPro_Web\\PureAirPro\\wwwroot\\Jquery\\ProductOrder.js",
       "PackagePath": "staticwebassets\\Jquery\\ProductOrder.js"
     },
@@ -10255,6 +10259,10 @@
     {
       "Id": "F:\\Krunal Canada\\AI\\CapStone\\PureAirPro\\PureAirPro_Web\\PureAirPro\\wwwroot\\assets\\plugins\\global\\sourcemaps\\tiny-slider.css.map",
       "PackagePath": "staticwebassets\\assets\\plugins\\global\\sourcemaps\\tiny-slider.css.map"
+    },
+    {
+      "Id": "F:\\Krunal Canada\\AI\\CapStone\\PureAirPro\\PureAirPro_Web\\PureAirPro\\wwwroot\\css\\Common.css",
+      "PackagePath": "staticwebassets\\css\\Common.css"
     },
     {
       "Id": "F:\\Krunal Canada\\AI\\CapStone\\PureAirPro\\PureAirPro_Web\\PureAirPro\\wwwroot\\css\\Loader.css",
