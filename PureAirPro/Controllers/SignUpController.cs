@@ -7,7 +7,14 @@ namespace PureAirPro.Controllers
 {
     public class SignUpController : Controller
     {
-        public IActionResult Index()
+		private readonly PureAirProWebContext _context;
+
+		public SignUpController(PureAirProWebContext context)
+		{
+			_context = context;
+		}
+
+		public IActionResult Index()
         {
             return View();
         }
@@ -26,11 +33,10 @@ namespace PureAirPro.Controllers
         {
             if (User != null)
             {
-                var context = new PureAirProWebContext();
                 try
                 {
-                    context.Users.Add(User);
-                    context.SaveChanges();
+					_context.Users.Add(User);
+					_context.SaveChanges();
                     SMTPEmail sMTPmail = new SMTPEmail();
                     await sMTPmail.TaskSendEmail(User.Email,User.FirstName,User.LastName);
                     

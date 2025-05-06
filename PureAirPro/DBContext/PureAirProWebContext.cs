@@ -19,14 +19,14 @@ namespace PureAirPro.DBContext
         public virtual DbSet<OrderDetail> OrderDetails { get; set; } = null!;
         public virtual DbSet<Users> Users { get; set; } = null!;
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-				var connectionString = Environment.GetEnvironmentVariable("DefaultConnection");
-				optionsBuilder.UseSqlServer(connectionString);
-            }
-        }
+    //    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    //    {
+    //        if (!optionsBuilder.IsConfigured)
+    //        {
+				//var connectionString = Environment.GetEnvironmentVariable("DefaultConnection");
+				//optionsBuilder.UseSqlServer(connectionString);
+    //        }
+    //    }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
