@@ -46416,8 +46416,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>0o3r366et7</Fingerprint>
-      <Integrity>sBkV73MSw03sW8OLobaA4qNGaOxiWEDz+/6eo3+rfM8=</Integrity>
+      <Fingerprint>lngme1gk6o</Fingerprint>
+      <Integrity>L5B6aIih4sKdE7xoI2swgvDbqcw+XrCxP231d6hQT7I=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Jquery\ProductOrder.js'))</OriginalItemSpec>

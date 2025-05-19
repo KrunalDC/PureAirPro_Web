@@ -29,7 +29,13 @@ function onBeginapi() {
 }
 function onSuccessSignUp(response) {
     $('#loader').addClass('hidden');
-    window.location = "/Home/Index";
+    Swal.fire({
+        title: "Success!!",
+        text: "Your account has been created successfully! Please login using your credentials to continue.",
+        icon: "success"
+    }).then(function () {
+        window.location = "/SignUp/Login";
+    });
 }
 function onBeginSignUp() {
     $('#loader').removeClass('hidden');
@@ -38,7 +44,7 @@ function onFailureapi() {
 
 }
 
-$("#Quantity").on('keyup', function () {
+$("#Quantity").on('change', function () {
     var quantity = $(this).val();
     var price = $("#Price").val();
     var TotalPrice = (price * quantity).toFixed(2);

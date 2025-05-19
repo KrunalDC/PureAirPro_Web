@@ -38,8 +38,8 @@
                                 </button>
                                 <!--end::Header toggle-->
                                 <!--begin::Logo-->
-                                <a href="" class="d-flex align-items-center mb-1 mb-lg-0 pt-lg-1">
-                                    <img alt="Logo" src="assets/media/logos/default-small.svg" class="d-block d-sm-none" />
+                                <a href="/" class="d-flex align-items-center mb-1 mb-lg-0 pt-lg-1">
+                                    <img alt="Logo" src="~/assets/media/logos/default-small.svg" class="d-block d-sm-none" />
                                     <img style="width:60px" alt="Logo" src="~/image/logo.jpeg" class="d-none d-sm-block" />
                                 </a>
                                 <h3 style="color:aliceblue;margin-left:20px;margin-top:17px" class="header3">
@@ -49,7 +49,19 @@
                             </div>
                             <!--end::Logo wrapper-->
                         </div>
-                        <a class="btn btn-primary btnsignup" style="background-color: #00B2FF !important" href="/SignUp/SignUp"> Sign Up</a>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <div class="d-flex align-items-center">
+                                <span class="text-white pt-5">Hello, @User.Identity.Name!</span>
+                                <form method="post" asp-controller="SignUp" asp-action="Logout">
+                                    <button type="submit" class="btn btn-danger ms-5">Logout</button>
+                                </form>
+                            </div>
+                        }
+                        else
+                        {
+                            <a class="btn btn-primary btnsignup" style="background-color: #00B2FF !important" href="/SignUp/SignUp"> Sign Up</a>
+                        }
                         <!--end::Logo and search-->
                     </div>
                     <!--end::Header primary container-->
@@ -603,7 +615,7 @@
                                                 <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
-                                                        <img src="assets/media/avatars/300-6.jpg" alt="" />
+                                                        <img src="~/assets/media/avatars/300-6.jpg" alt="" />
                                                     </div>
                                                     <!--end::Symbol-->
                                                     <!--begin::Title-->
@@ -618,7 +630,7 @@
                                                 <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
-                                                        <img src="assets/media/avatars/300-2.jpg" alt="" />
+                                                        <img src="~/assets/media/avatars/300-2.jpg" alt="" />
                                                     </div>
                                                     <!--end::Symbol-->
                                                     <!--begin::Title-->
@@ -633,7 +645,7 @@
                                                 <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
-                                                        <img src="assets/media/avatars/300-9.jpg" alt="" />
+                                                        <img src="~/assets/media/avatars/300-9.jpg" alt="" />
                                                     </div>
                                                     <!--end::Symbol-->
                                                     <!--begin::Title-->
@@ -648,7 +660,7 @@
                                                 <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
-                                                        <img src="assets/media/avatars/300-14.jpg" alt="" />
+                                                        <img src="~/assets/media/avatars/300-14.jpg" alt="" />
                                                     </div>
                                                     <!--end::Symbol-->
                                                     <!--begin::Title-->
@@ -663,7 +675,7 @@
                                                 <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
-                                                        <img src="assets/media/avatars/300-11.jpg" alt="" />
+                                                        <img src="~/assets/media/avatars/300-11.jpg" alt="" />
                                                     </div>
                                                     <!--end::Symbol-->
                                                     <!--begin::Title-->
@@ -682,7 +694,7 @@
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <span class="symbol-label bg-light">
-                                                            <img class="w-20px h-20px" src="assets/media/svg/brand-logos/volicity-9.svg" alt="" />
+                                                            <img class="w-20px h-20px" src="~/assets/media/svg/brand-logos/volicity-9.svg" alt="" />
                                                         </span>
                                                     </div>
                                                     <!--end::Symbol-->
@@ -699,7 +711,7 @@
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <span class="symbol-label bg-light">
-                                                            <img class="w-20px h-20px" src="assets/media/svg/brand-logos/tvit.svg" alt="" />
+                                                            <img class="w-20px h-20px" src="~/assets/media/svg/brand-logos/tvit.svg" alt="" />
                                                         </span>
                                                     </div>
                                                     <!--end::Symbol-->
@@ -716,7 +728,7 @@
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <span class="symbol-label bg-light">
-                                                            <img class="w-20px h-20px" src="assets/media/svg/misc/infography.svg" alt="" />
+                                                            <img class="w-20px h-20px" src="~/assets/media/svg/misc/infography.svg" alt="" />
                                                         </span>
                                                     </div>
                                                     <!--end::Symbol-->
@@ -733,7 +745,7 @@
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <span class="symbol-label bg-light">
-                                                            <img class="w-20px h-20px" src="assets/media/svg/brand-logos/leaf.svg" alt="" />
+                                                            <img class="w-20px h-20px" src="~/assets/media/svg/brand-logos/leaf.svg" alt="" />
                                                         </span>
                                                     </div>
                                                     <!--end::Symbol-->
@@ -750,7 +762,7 @@
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <span class="symbol-label bg-light">
-                                                            <img class="w-20px h-20px" src="assets/media/svg/brand-logos/tower.svg" alt="" />
+                                                            <img class="w-20px h-20px" src="~/assets/media/svg/brand-logos/tower.svg" alt="" />
                                                         </span>
                                                     </div>
                                                     <!--end::Symbol-->

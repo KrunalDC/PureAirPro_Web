@@ -8,5 +8,6 @@ namespace PureAirPro.DBContext.ViewModels
         public string Email { get; set; }
         [Required]
         public string PassWord { get; set; }
+        public string? UserErrorMessage { get; set; }
     }
 }
